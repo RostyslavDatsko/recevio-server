@@ -18,5 +18,7 @@ OPENAI_API_KEY=your_api_key
 
 ```bash
 npm install
-npm run dev
+npm run db:init
+npm run db:seed
+npm run start
 ```
