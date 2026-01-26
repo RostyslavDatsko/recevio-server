@@ -1,0 +1,331 @@
+{
+  "receipts": [
+    {
+      "metadata": {
+        "photo_url": "/uploads/r001.jpg",
+        "upload_timestamp": "2026-01-10T12:15:22.100Z",
+        "original_filename": "receipt_01.jpg"
+      },
+      "merchant": {
+        "name": "Tommy Hilfiger",
+        "address": "Dufferin Mall\n(416) 533-2183"
+      },
+      "transaction": {
+        "purchase_date": "2025-12-22",
+        "payment_method": "Visa CREDIT",
+        "currency": "CAD"
+      },
+      "items": [
+        {
+          "name": "ACCS WOMENS SOCKS",
+          "quantity": 1,
+          "unit_price": 10.42,
+          "original_unit_price": 24.5,
+          "discounts": [
+            { "name": "15% off entire", "amount": 1.83 }
+          ],
+          "total_price": 10.42
+        },
+        {
+          "name": "ACCS MENS SOCKS",
+          "quantity": 3,
+          "unit_price": 9.56,
+          "original_unit_price": 22.5,
+          "discounts": [
+            { "name": "15% off entire", "amount": 1.69 }
+          ],
+          "total_price": 28.68
+        }
+      ],
+      "summary": {
+        "subtotal": 39.1,
+        "discounts": [
+          { "type": "15% off entire", "amount": 6.9 }
+        ],
+        "taxes": [
+          { "name": "HST-ON", "amount": 5.07 }
+        ],
+        "total_amount": 44.17
+      }
+    },
+
+    {
+      "metadata": {
+        "photo_url": "/uploads/r002.jpg",
+        "upload_timestamp": "2026-01-11T09:42:10.540Z",
+        "original_filename": "receipt_02.jpg"
+      },
+      "merchant": {
+        "name": "UNIQLO",
+        "address": "Eaton Centre\n(647) 288-6001"
+      },
+      "transaction": {
+        "purchase_date": "2025-11-18",
+        "payment_method": "Mastercard CREDIT",
+        "currency": "CAD"
+      },
+      "items": [
+        {
+          "name": "HEATTECH CREW NECK",
+          "quantity": 2,
+          "unit_price": 14.9,
+          "original_unit_price": 19.9,
+          "discounts": [
+            { "name": "Promo", "amount": 5 }
+          ],
+          "total_price": 29.8
+        }
+      ],
+      "summary": {
+        "subtotal": 29.8,
+        "discounts": [
+          { "type": "Promo", "amount": 5 }
+        ],
+        "taxes": [
+          { "name": "HST-ON", "amount": 3.27 }
+        ],
+        "total_amount": 33.07
+      }
+    },
+
+    {
+      "metadata": {
+        "photo_url": "/uploads/r003.jpg",
+        "upload_timestamp": "2026-01-12T18:21:44.870Z",
+        "original_filename": "receipt_03.jpg"
+      },
+      "merchant": {
+        "name": "Nike Store",
+        "address": "Square One Mall\n(905) 890-1275"
+      },
+      "transaction": {
+        "purchase_date": "2025-12-05",
+        "payment_method": "Debit",
+        "currency": "CAD"
+      },
+      "items": [
+        {
+          "name": "NIKE AIR FORCE 1",
+          "quantity": 1,
+          "unit_price": 134.99,
+          "original_unit_price": 159.99,
+          "discounts": [
+            { "name": "Member Discount", "amount": 25 }
+          ],
+          "total_price": 134.99
+        }
+      ],
+      "summary": {
+        "subtotal": 134.99,
+        "discounts": [
+          { "type": "Member Discount", "amount": 25 }
+        ],
+        "taxes": [
+          { "name": "HST-ON", "amount": 17.55 }
+        ],
+        "total_amount": 152.54
+      }
+    },
+
+    {
+      "metadata": {
+        "photo_url": "/uploads/r004.jpg",
+        "upload_timestamp": "2026-01-13T14:05:30.210Z",
+        "original_filename": "receipt_04.jpg"
+      },
+      "merchant": {
+        "name": "Loblaws",
+        "address": "Mississauga, ON"
+      },
+      "transaction": {
+        "purchase_date": "2025-12-28",
+        "payment_method": "Visa CREDIT",
+        "currency": "CAD"
+      },
+      "items": [
+        {
+          "name": "CHICKEN BREAST",
+          "quantity": 1.2,
+          "unit_price": 12.99,
+          "original_unit_price": 15.99,
+          "discounts": [
+            { "name": "Weekly Sale", "amount": 3 }
+          ],
+          "total_price": 15.59
+        },
+        {
+          "name": "WHOLE MILK 4L",
+          "quantity": 1,
+          "unit_price": 6.49,
+          "original_unit_price": 6.49,
+          "discounts": [],
+          "total_price": 6.49
+        }
+      ],
+      "summary": {
+        "subtotal": 22.08,
+        "discounts": [
+          { "type": "Weekly Sale", "amount": 3 }
+        ],
+        "taxes": [
+          { "name": "HST-ON", "amount": 1.55 }
+        ],
+        "total_amount": 23.63
+      }
+    },
+
+    {
+      "metadata": {
+        "photo_url": "/uploads/r005.jpg",
+        "upload_timestamp": "2026-01-14T19:33:58.600Z",
+        "original_filename": "receipt_05.jpg"
+      },
+      "merchant": {
+        "name": "Winners",
+        "address": "Heartland Town Centre"
+      },
+      "transaction": {
+        "purchase_date": "2025-12-14",
+        "payment_method": "Cash",
+        "currency": "CAD"
+      },
+      "items": [
+        {
+          "name": "MEN HOODIE",
+          "quantity": 1,
+          "unit_price": 39.99,
+          "original_unit_price": 59.99,
+          "discounts": [
+            { "name": "Clearance", "amount": 20 }
+          ],
+          "total_price": 39.99
+        }
+      ],
+      "summary": {
+        "subtotal": 39.99,
+        "discounts": [
+          { "type": "Clearance", "amount": 20 }
+        ],
+        "taxes": [],
+        "total_amount": 39.99
+      }
+    },
+
+    {
+      "metadata": {
+        "photo_url": "/uploads/r006.jpg",
+        "upload_timestamp": "2026-01-15T08:11:02.420Z",
+        "original_filename": "receipt_06.jpg"
+      },
+      "merchant": {
+        "name": "IKEA",
+        "address": "Etobicoke, ON"
+      },
+      "transaction": {
+        "purchase_date": "2025-12-02",
+        "payment_method": "Visa CREDIT",
+        "currency": "CAD"
+      },
+      "items": [
+        {
+          "name": "TABLE LAMP",
+          "quantity": 2,
+          "unit_price": 19.99,
+          "original_unit_price": 24.99,
+          "discounts": [
+            { "name": "Family Offer", "amount": 5 }
+          ],
+          "total_price": 39.98
+        }
+      ],
+      "summary": {
+        "subtotal": 39.98,
+        "discounts": [
+          { "type": "Family Offer", "amount": 5 }
+        ],
+        "taxes": [
+          { "name": "HST-ON", "amount": 4.6 }
+        ],
+        "total_amount": 44.58
+      }
+    },
+
+    {
+      "metadata": {
+        "photo_url": "/uploads/r007.jpg",
+        "upload_timestamp": "2026-01-15T16:47:19.990Z",
+        "original_filename": "receipt_07.jpg"
+      },
+      "merchant": {
+        "name": "Best Buy",
+        "address": "Brampton, ON"
+      },
+      "transaction": {
+        "purchase_date": "2025-11-29",
+        "payment_method": "Visa CREDIT",
+        "currency": "CAD"
+      },
+      "items": [
+        {
+          "name": "WIRELESS MOUSE",
+          "quantity": 1,
+          "unit_price": 29.99,
+          "original_unit_price": 49.99,
+          "discounts": [
+            { "name": "Black Friday", "amount": 20 }
+          ],
+          "total_price": 29.99
+        }
+      ],
+      "summary": {
+        "subtotal": 29.99,
+        "discounts": [
+          { "type": "Black Friday", "amount": 20 }
+        ],
+        "taxes": [
+          { "name": "HST-ON", "amount": 3.9 }
+        ],
+        "total_amount": 33.89
+      }
+    },
+
+    {
+      "metadata": {
+        "photo_url": "/uploads/r008.jpg",
+        "upload_timestamp": "2026-01-16T11:26:45.310Z",
+        "original_filename": "receipt_08.jpg"
+      },
+      "merchant": {
+        "name": "Costco",
+        "address": "Mississauga, ON"
+      },
+      "transaction": {
+        "purchase_date": "2025-12-20",
+        "payment_method": "Debit",
+        "currency": "CAD"
+      },
+      "items": [
+        {
+          "name": "TOILET PAPER 30 ROLLS",
+          "quantity": 1,
+          "unit_price": 22.99,
+          "original_unit_price": 27.99,
+          "discounts": [
+            { "name": "Instant Rebate", "amount": 5 }
+          ],
+          "total_price": 22.99
+        }
+      ],
+      "summary": {
+        "subtotal": 22.99,
+        "discounts": [
+          { "type": "Instant Rebate", "amount": 5 }
+        ],
+        "taxes": [
+          { "name": "HST-ON", "amount": 2.99 }
+        ],
+        "total_amount": 25.98
+      }
+    }
+  ]
+}

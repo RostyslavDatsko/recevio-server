@@ -1,10 +1,10 @@
 BEGIN;
 
 CREATE TABLE receipts (
-  id          SERIAL PRIMARY KEY,
-  subtotal    NUMERIC(10,2),
-  total       NUMERIC(10,2),
-  date        TIMESTAMP
+  id       SERIAL PRIMARY KEY,
+  subtotal NUMERIC(10,2),
+  total    NUMERIC(10,2),
+  date     TIMESTAMP
 );
 
 CREATE TABLE items (
@@ -18,9 +18,11 @@ CREATE TABLE items (
 
 CREATE TABLE photos (
   id                SERIAL PRIMARY KEY,
+  receipt_id        INT NOT NULL,
   photo_url         VARCHAR(2048),
   original_filename VARCHAR(255),
-  uploaded_at       TIMESTAMP
+  uploaded_at       TIMESTAMP,
+  FOREIGN KEY (receipt_id) REFERENCES receipts(id) ON DELETE CASCADE
 );
 
 CREATE TABLE merchants (
@@ -43,9 +45,11 @@ CREATE TABLE discounts (
 
 CREATE TABLE transactions (
   id             SERIAL PRIMARY KEY,
+  receipt_id     INT NOT NULL,
   date           TIMESTAMP,
   payment_method VARCHAR(100),
-  currency       VARCHAR(10)
+  currency       VARCHAR(10),
+  FOREIGN KEY (receipt_id) REFERENCES receipts(id) ON DELETE CASCADE
 );
 
 CREATE TABLE receipt_items (
@@ -54,14 +58,6 @@ CREATE TABLE receipt_items (
   CONSTRAINT receipt_items_unique UNIQUE (receipt_id, item_id),
   FOREIGN KEY (receipt_id) REFERENCES receipts(id) ON DELETE CASCADE,
   FOREIGN KEY (item_id)    REFERENCES items(id)    ON DELETE CASCADE
-);
-
-CREATE TABLE photo_receipts (
-  photo_id   INT NOT NULL,
-  receipt_id INT NOT NULL,
-  CONSTRAINT photo_receipts_unique UNIQUE (photo_id, receipt_id),
-  FOREIGN KEY (photo_id)   REFERENCES photos(id)   ON DELETE CASCADE,
-  FOREIGN KEY (receipt_id) REFERENCES receipts(id) ON DELETE CASCADE
 );
 
 CREATE TABLE merchant_receipts (
@@ -77,7 +73,7 @@ CREATE TABLE tax_receipts (
   receipt_id INT NOT NULL,
   CONSTRAINT tax_receipts_unique UNIQUE (tax_id, receipt_id),
   FOREIGN KEY (tax_id)     REFERENCES taxes(id)     ON DELETE CASCADE,
-  FOREIGN KEY (receipt_id) REFERENCES receipts(id) ON DELETE CASCADE
+  FOREIGN KEY (receipt_id) REFERENCES receipts(id)  ON DELETE CASCADE
 );
 
 CREATE TABLE discount_receipts (
@@ -86,14 +82,6 @@ CREATE TABLE discount_receipts (
   CONSTRAINT discount_receipts_unique UNIQUE (discount_id, receipt_id),
   FOREIGN KEY (discount_id) REFERENCES discounts(id) ON DELETE CASCADE,
   FOREIGN KEY (receipt_id)  REFERENCES receipts(id)  ON DELETE CASCADE
-);
-
-CREATE TABLE transaction_receipts (
-  transaction_id INT NOT NULL,
-  receipt_id     INT NOT NULL,
-  CONSTRAINT transaction_receipts_unique UNIQUE (transaction_id, receipt_id),
-  FOREIGN KEY (transaction_id) REFERENCES transactions(id) ON DELETE CASCADE,
-  FOREIGN KEY (receipt_id)     REFERENCES receipts(id)      ON DELETE CASCADE
 );
 
 CREATE TABLE item_discounts (
